@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<head>
+		<title>My App</title>
+		<meta charset="utf-8" />
+		
+		<meta name="viewport" 		
+		content="
+		user-scalable=no, 
+		initial-scale=1, 
+		maximum-scale=1, 
+		minimum-scale=1, 
+		width=device-width, 
+		height=device-height"/>	
+<!-- 	<meta name="viewport" 		To optimize for mobile devices. The viewport meta tag- the key to preparing a page for mobile devices optimization
+		content="user-scalable=no, 	<!-- Sets whether the user can zoom in and out of a webpage. Set to yes or no.
+		initial-scale=1, 			<!-- The initial zoom of the webpage, where a value of 1.0 means no zoom.
+		maximum-scale=1, 			<!-- The maximum level the user is able to zoom in on a webpage, where a value of 1.0 means the user isn't able to at all.
+		minimum-scale=1, 			<!-- The minimum level the user is able to zoom out of a webpage, where a value of 1.0 means the user isn't able to at all.
+		width=device-width, 		<!-- The width of the virtual viewport of the device. Enter a number (pixels assumed), or the keyword "device-width" to set the viewport to the physical width of the device's screen.
+		height=device-height" />	<!-- The height of the virtual viewport of the device. Enter a number (pixels assumed), or the keyword "device-height" to set the viewport to the physical height of the device's screen.-->		
+		<style>
+		
+		html
+		{
+			border:0px;
+			border:solid;
+<!--			width:95%;
+			height:95%;-->
+		}
+		h1
+		{
+			color:red;
+		}
+		div
+		{
+		width:100%;
+		height:100%;
+		color:red;
+		font-size:50px;
+		background-color:blue;
+		text-align:center;
+		}
+		</style>
+		<script type="text/javascript">
+			window.addEventListener('load', 
+			function() 
+			{
+                document.body.addEventListener('touchmove', 
+				function(e) 
+				{
+					e.preventDefault();
+				}, false);
+            }, false);
+			var a=false;
+			
+			function clicking()
+			{
+				btn = document.getElementById("btn");
+				if (a==true)
+				{
+					a=false;
+					btn.style.color = "red";
+					btn.style.backgroundColor = "blue";
+				}
+				else
+				{
+					btn.style.color = "blue";
+					btn.style.backgroundColor = "red";
+					a=true;
+				}
+			}
+		</script>
+	</head>
+	<body id="bdy">
+		<div id="btn" onclick="clicking()"><b>Welcome</b></div>
+	</body>
+</html>
