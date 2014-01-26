@@ -15,10 +15,10 @@
 	
 	<preference name="phonegap-version" value="3.1.0" />
 	<preference name="orienation" value="portrait" />
+	
 <!--	<preference name="DisallowOverscroll" value="true" />
 	<preference name="UIWebViewBounce" value="false" />
-
-    <preference name="permissions"		value="none"/>
+    	<preference name="permissions" value="none"/>
 
 	<icon src = "icons/android/hdpi.png" gap:platform = "android" gap:density = "hdpi" />
 	<gap:splash src = "splash/android/splash.png" gap:platform = "android" />
