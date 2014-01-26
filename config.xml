@@ -14,4 +14,5 @@
 	
 	<preference name="phonegap-version" value="3.1.0" />
 	<preference name="orienation" value="portrait" />
+	<preference name="permissions" value="none"/>
 </widget>
