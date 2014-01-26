@@ -65,6 +65,12 @@
 					a=true;
 				}
 			}
+            window.addEventListener('touchstart', function(event)
+                                    {
+                                        target = event.target;
+                                        var lbl = document.getElementById("lbl");
+                                        lbl.innerHTML="hello";
+                                    }, false);
 		</script>
 	</head>
 	<body id="bdy">
